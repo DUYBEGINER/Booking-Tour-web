@@ -263,6 +263,9 @@ body {
   width: 130px;
   height: 44px;
   display: flex;
+  font-family: 'Musish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   justify-content: center;
   align-items: center;
 }
@@ -278,9 +281,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 90%;
+  max-width: 1500px;
   margin: 0 auto;
   margin-top: 50px;
-
+  
 }
 
 .province-img{
@@ -317,31 +321,34 @@ body {
 
 .province-info{
   background-color: #F9FDFF;
-  border-radius: 10px;
+  border-radius: 5px;
   position: absolute;
-  width: 70%;
+  width: 75%;
   bottom: -160;
   display: flex;
   padding: 20px;
+  box-shadow: 0px 1px 20px 1px rgba(88, 88, 88, 0.178)
 }
 
+.cta-container {
+  display: flex;
+  justify-content: flex-end; /* Đẩy nút sang phải */
+  align-items: flex-end; /* Đẩy nút xuống dưới */
+  flex-grow: 1;
+}
 
-.province-cta p{
-  margin-top: 10px;
-  width: 400px;
-  height: 40px;
-
-  background-color: white;
+.cta-button {
+  background-color: #FC3131;
+  color: white;
+  padding: 10px 40px;
+  border: none;
   border-radius: 5px;
-  
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.item1 p{
-  color: #D176E0;
+.cta-button:hover {
+  background-color: #D176E0;
 }
-.item2 p{
-  color: #E4B613;
-}
-.item3 p{
-  color: #FC3131;
-}
+
+
